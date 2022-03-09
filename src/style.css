@@ -1,0 +1,127 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.col-1{
+  width: 8.33%;
+}
+.col-2{
+  width: 16.66%;
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.33%;
+}
+.col-5{
+  width: 41.66%;
+}
+.col-6{
+  width: 50%;
+}
+.col-7{
+  width: 58.33%;
+}
+.col-8{
+  width: 66.66%;
+}
+.col-9{
+  width: 75%;
+}
+.col-10{
+  width: 83.33%;
+}
+.col-11{
+  width: 91.66%;
+}
+.col-12{
+  width: 100%;
+}
+#header{
+  background: url("/MULTIMEDIA/louis-hansel-U6-KvV7HlMk-unsplash\ 1.png");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+nav{
+  background-color: rgba(0, 0, 0, 0.822);
+  display: flex;
+  padding:2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* position: sticky; */
+  top: 0;
+  transition: all .3s;
+}
+nav ul{
+  display: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+nav figure{
+  width: 80%;
+  display: flex;
+}
+nav figure img{
+  width: 4rem;
+  /*MEDIDAS BIG
+  width: 7rem;
+  height: 7rem; */
+}
+nav li a{
+  line-height: 2rem;
+  margin: 0.5rem 0;
+  color: white;
+  padding: 0.5rem;
+  transition: all .5s;
+  font-size: medium;
+  text-transform: uppercase;
+}
+nav li a.activo, nav li a:hover{
+  color: #382E0B;
+  transition: .3s ease-in-out;
+}
+.boton_hamburguesa {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  height: 3rem;
+  border-color:white;
+  border:solid;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.boton_hamburguesa:hover{
+  background-color: white;
+  color: black;
+  transition: all .3s ease-in-out;
+}
+#check{
+  display: none;
+}
+
+#check:checked ~ .nav-main {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#check:checked ~ .nav-main li{
+  padding: 0.5rem;
+}
+p{
+  margin-top: 20rem;
+  font-size: 20rem;
+}
