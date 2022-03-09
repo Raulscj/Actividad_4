@@ -94,8 +94,9 @@ nav li a:hover{
 #banner i{
   color: white;
   cursor: pointer;
+  font-size: 2rem;
 }
-
+/* ------- */
 .Sin_fondo{
   background-color: white;
   display: flex;
@@ -116,6 +117,27 @@ nav li a:hover{
   object-fit: cover;
 }
 
+#Conocenos h3{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#Conocenos .content{
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.autor{
+  text-align: right;
+  font-size: 0.5rem;
+}
+.firma{
+  text-align: right;
+  font-size: 0.4rem;
+  color: grey;
+}
+/* ------- */
 #Thebest{
   background-image: url('/MULTIMEDIA/food.jpg');
   object-fit: cover;
@@ -128,17 +150,24 @@ nav li a:hover{
   text-align: center;
   padding: 1.5rem;
   font-size: 1.5rem;
+  color: white;
+}
+#Thebest h3 hr{
+  color: white;
 }
 .food{
   display: flex;
   padding-left: 3rem;
   padding-right: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .card{
   background-color: yellowgreen;
   padding: 0.3rem;
-  margin-right:1rem;
-  width: 40%;
+  margin:1rem;
+  width: 50%;
+
 }
 .card figure{
   width: 100%;
@@ -147,11 +176,24 @@ nav li a:hover{
   width: 100%;
   object-fit: cover;
 }
-
+.card p{
+  text-align: center;
+  font-size: 0.5rem;
+  color: grey;
+}
+/* ------- */
 #servicios h3{
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
+#servicios P{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+/* ----- */
 #Comentarios{
   background-image: url('/MULTIMEDIA/comentarios.jpg') ;
   object-fit: cover;
@@ -166,6 +208,7 @@ nav li a:hover{
   width: 100%;
   flex-direction: column;
   align-items: center;
+  line-height: 1.5rem;
 }
 #Comentarios .card{
   background-color:transparent;
@@ -182,4 +225,10 @@ nav li a:hover{
 #Comentarios .texto3{
   text-align: center;
 }
+.texto3 p{
+  color: white;
+  text-transform: uppercase;
+  background-color: #382E0B;
+}
+
 
