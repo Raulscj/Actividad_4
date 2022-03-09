@@ -5,42 +5,7 @@
   text-decoration: none;
   list-style: none;
 }
-.col-1{
-  width: 8.33%;
-}
-.col-2{
-  width: 16.66%;
-}
-.col-3{
-  width: 25%;
-}
-.col-4{
-  width: 33.33%;
-}
-.col-5{
-  width: 41.66%;
-}
-.col-6{
-  width: 50%;
-}
-.col-7{
-  width: 58.33%;
-}
-.col-8{
-  width: 66.66%;
-}
-.col-9{
-  width: 75%;
-}
-.col-10{
-  width: 83.33%;
-}
-.col-11{
-  width: 91.66%;
-}
-.col-12{
-  width: 100%;
-}
+
 #header{
   background: url("/MULTIMEDIA/louis-hansel-U6-KvV7HlMk-unsplash\ 1.png");
   object-fit: cover;
@@ -48,14 +13,13 @@
   background-position: center;
   height: 100vh;
 }
-
 nav{
   background-color: rgba(0, 0, 0, 0.822);
   display: flex;
   padding:2rem;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   transition: all .3s;
 }
@@ -84,7 +48,7 @@ nav li a{
   font-size: medium;
   text-transform: uppercase;
 }
-nav li a.activo, nav li a:hover{
+nav li a:hover{
   color: #382E0B;
   transition: .3s ease-in-out;
 }
@@ -110,7 +74,6 @@ nav li a.activo, nav li a:hover{
 #check{
   display: none;
 }
-
 #check:checked ~ .nav-main {
   width: 100%;
   display:flex;
@@ -121,7 +84,54 @@ nav li a.activo, nav li a:hover{
 #check:checked ~ .nav-main li{
   padding: 0.5rem;
 }
-p{
-  margin-top: 20rem;
-  font-size: 20rem;
+.Sin_fondo{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  padding-left: 2.5rem;
+  padding-right:2.5rem;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+.Sin_fondo figure{
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.Sin_fondo figure img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#Thebest{
+  background-image: url('/MULTIMEDIA/food.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2rem;
+}
+#Thebest h3{
+  /* estilos de la palabra */
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+.food{
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.card{
+  background-color: yellowgreen;
+  padding: 0.3rem;
+  margin-right:1rem;
+  width: 40%;
+}
+#Thebest figure{
+  width: 100%;
+}
+#Thebest figure img{
+  width: 100%;
+  object-fit: cover;
 }
