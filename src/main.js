@@ -1,8 +1,31 @@
 /* Efecto boton de scroll */
+console.log("Hola");
 $(document).ready(function () {
   $("#boton_main").click(function () {
-    console, log("click");
-    var C = document.getElementById("here");
+    var C = document.getElementById("Conocenos");
     C.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  const formulario = document.getElementById("Formulario");
+  $(".formulario").click(function () {
+    $("form").toggle("slow");
+  });
+
+  /* BASE DE DATO */
+  $("#Formulario").submit(function (e) {
+    const Data = {
+      name: $("#name").val(),
+      last_name: $("#last_name").val(),
+      cantidad: $("#cantidad").val(),
+      fecha: $("#fecha").val(),
+    };
+    $.post(
+      "Create.php",
+      Data,
+      function (response) {
+        console.log(response);
+      },
+      "dataType"
+    );
+    e.preventDefault();
   });
 });

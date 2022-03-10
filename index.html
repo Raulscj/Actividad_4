@@ -41,9 +41,7 @@
         </ul>
       </nav>
       <banner id="banner">
-        <a href="#Conocenos">
-          <i id="boton_main" class="fa-solid fa-circle-arrow-down"></i>
-        </a>
+        <i id="boton_main" class="fa-solid fa-circle-arrow-down"></i>
       </banner>
     </header>
     <!-- SECCIÓN 1 -->
@@ -264,12 +262,22 @@
           Haz tu reservación
           <hr />
         </h3>
-        <form class="oculto">
+        <form id="Formulario">
           <div class="contenido">
-            <input type="text" id="name" placeholder="Nombre..." />
-            <input type="text" id="lastname" placeholder="Apellido..." />
-            <input type="number" id="cantidad" placeholder="N° personas..." />
-            <input type="datetime-local" id="fecha" />
+            <input type="text" id="name" placeholder="Nombre..." required />
+            <input
+              type="text"
+              id="last_name"
+              placeholder="Apellido..."
+              required
+            />
+            <input
+              type="number"
+              id="cantidad"
+              placeholder="N° personas..."
+              required
+            />
+            <input type="datetime-local" id="fecha" required />
           </div>
           <button type="submit">Reservar</button>
         </form>
@@ -281,6 +289,6 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
+    <script src="./src/main.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
 }
 
 #header{
-  background: url("/MULTIMEDIA/louis-hansel-U6-KvV7HlMk-unsplash\ 1.png");
+  background: url("../MULTIMEDIA/louis-hansel-U6-KvV7HlMk-unsplash\ 1.png");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -115,6 +115,7 @@ nav li a:hover{
 .Sin_fondo figure img{
   width: 100%;
   object-fit: cover;
+  height: 40vh;
 }
 
 #Conocenos h3{
@@ -163,7 +164,7 @@ nav li a:hover{
   justify-content: center;
 }
 .card{
-  background-color: yellowgreen;
+  background-color:#f4e9ba;
   padding: 0.3rem;
   margin:1rem;
   width: 50%;
@@ -178,7 +179,7 @@ nav li a:hover{
 }
 .card p{
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   color: grey;
 }
 /* ------- */
@@ -245,16 +246,19 @@ nav li a:hover{
 .formulario{
   margin-top: 1.5rem;
   line-height: 1.5rem;
+  cursor: pointer;
 }
+
 #Reservacion form{
   background-color: #382E0B;
-  display: flex;
+  display:none;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content:space-evenly;
   padding: 0.5rem;
 }
 #Reservacion form input{
   margin: 0.5rem;
+  width: 10rem;
 }
 #Reservacion form button{
   background:none;
