@@ -35,6 +35,7 @@ $(document).ready(function () {
     const url = "DATABASE/Create.php";
     $.post(url, Data, function (response) {
       console.log(response);
+      $("#Formulario").trigger("reset");
     });
   });
 });
