@@ -18,14 +18,23 @@ $(document).ready(function () {
       cantidad: $("#cantidad").val(),
       fecha: $("#fecha").val(),
     };
-    $.post(
+    /* $.ajax({
+      type: "POST",
+      url: "Create.php",
+      data: Data,
+      success: function (response) {
+        console.log(response);
+      },
+    });
+    e.preventDefault(); */
+
+    /* $.post(
       "Create.php",
       Data,
       function (response) {
-        console.log(response);
+        
       },
       "dataType"
-    );
-    e.preventDefault();
+    ); */
   });
 });

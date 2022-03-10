@@ -140,7 +140,7 @@ nav li a:hover{
 }
 /* ------- */
 #Thebest{
-  background-image: url('/MULTIMEDIA/food.jpg');
+  background-image: url('../MULTIMEDIA/food.jpg');
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -196,7 +196,7 @@ nav li a:hover{
 }
 /* ----- */
 #Comentarios{
-  background-image: url('/MULTIMEDIA/comentarios.jpg') ;
+  background-image: url('../MULTIMEDIA/comentarios.jpg') ;
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -272,7 +272,88 @@ nav li a:hover{
   letter-spacing: 0.1rem;
 
 }
-#Reservacion form button:hover{
+button:hover{
   background-color: black;
   transition: all .3s ease-in-out;
+}
+/* ---------- */
+/* Iconos */
+.phone::before{
+  content: '\f87b';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding-right: 0.2rem;
+  
+}
+.mail::before{
+  content: '\f0e0';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding-right: 0.2rem;
+}
+.clock::before{
+  content: '\f017';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding-right: 0.2rem;
+}
+.location::before{
+  content: '\f3c5';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding-right: 0.2rem;
+}
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.contact{
+  padding: 1rem;
+  width: 100%;
+  background: url('../MULTIMEDIA/footer.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.contact ul{
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.contact li{
+  color: white;
+  text-align: center;
+  line-height:1.5rem;
+  font-size: 0.8rem;
+}
+.icon{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.icon i{
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+}
+.allright{
+  background-color: black;
+  width: 100%;
+  padding: 1rem;
+}
+footer figure{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer figure img{
+  width: 50%;
+}
+.allright p{
+  color: white;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
 }
