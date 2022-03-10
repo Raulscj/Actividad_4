@@ -31,23 +31,10 @@ $(document).ready(function () {
       cantidad: $("#cantidad").val(),
       fecha: $("#fecha").val(),
     };
-    $.ajax({
-      type: "POST",
-      url: "DATABASE/Create.php",
-      data: Data,
-      success: function (response) {
-        console.log(response);
-      },
-    });
     e.preventDefault();
-
-    /* $.post(
-      "Create.php",
-      Data,
-      function (response) {
-        
-      },
-      "dataType"
-    ); */
+    const url = "DATABASE/Create.php";
+    $.post(url, Data, function (response) {
+      console.log(response);
+    });
   });
 });

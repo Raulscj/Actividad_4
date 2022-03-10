@@ -11,7 +11,6 @@
     if($connection){
         echo "Database is Connected :D ";
     }else{
-        die("No hay conexión: ".mysqli_connect_error());	
-    
+        die("No hay conexión: ".mysqli_connect_error());
     }
 ?>
