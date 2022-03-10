@@ -14,8 +14,19 @@ h3{
 p{
   font-size: 0.8rem;
 }
-#header{
+.bg-1{
   background: url("../MULTIMEDIA/louis-hansel-U6-KvV7HlMk-unsplash\ 1.png");
+}
+.bg-2{
+  background: url("../MULTIMEDIA/1.jpg");
+}
+.bg-3{
+  background: url("../MULTIMEDIA/2.jpg");
+}
+.bg-4{
+  background: url("../MULTIMEDIA/3.jpg");
+}
+#header{
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -421,6 +432,9 @@ footer figure img{
   }
 }
 @media screen and (min-width:768px){
+  .sticky figure img{
+    display: none;
+  }
   .boton_hamburguesa{
     display: none;
   }
@@ -547,8 +561,14 @@ footer figure img{
   #Comentarios .card{
     width:30%;
   }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
 }
-@media screen and (min-width:1440px){
+@media screen and (min-width:1340px){
   nav figure img{
     width: 8.5rem;
     height: 8.5rem; 
@@ -591,17 +611,11 @@ footer figure img{
     margin: 1.5rem;
     font-size: 1rem;
   }
-  .contact{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-  }
   .contact li{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .icon i{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .allright p{
     font-size: 0.8rem;
