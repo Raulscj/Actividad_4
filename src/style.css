@@ -369,6 +369,60 @@ footer figure img{
   text-transform: uppercase;
 }
 /* Responsive */
+@media screen and (min-width:700px){
+  #banner{
+    height: 80vh;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+  #Conocenos .content{
+    font-size: 0.95rem;
+    line-height: 1rem;
+  }
+  .autor{
+    font-size: 0.7rem;
+  }
+  .firma{
+    font-size: 0.6rem;
+  }
+  #servicios>h3{
+    font-size: 2.5rem;
+  }
+  #servicios p{
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  #Comentarios .card{
+    width:60%;
+  }
+  #Comentarios .card p{
+    font-weight: 900;
+  }
+  .texto4 h3{
+    font-size: 2rem;
+  }
+  #Reservacion form input{
+    font-size: 0.9rem;
+  }
+  #Reservacion hr{
+    margin-top: 0.5rem;
+  }
+  #Reservacion form button{
+    margin: 0.8rem;
+    font-size: 1rem;
+  }
+  .contact li{
+    font-size: 1rem;
+  }
+  .icon i{
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width:768px){
   .boton_hamburguesa{
     display: none;
@@ -440,14 +494,11 @@ footer figure img{
     line-height: 2rem;
   }
   .texto4 h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 250;
   }
   #Reservacion form input{
     font-size: 1rem;
-  }
-  #Reservacion hr{
-    margin-top: 0.5rem;
   }
   #Reservacion form button{
     margin: 1rem;
@@ -459,10 +510,5 @@ footer figure img{
   .allright{
     width: 50%;
   }
-  .contact li{
-    font-size: 1rem;
-  }
-  .icon i{
-    font-size: 2rem;
-  }
+  
 }
