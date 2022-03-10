@@ -1,3 +1,4 @@
+/* Navbar */
 const nav = document.querySelector("nav");
 const delay = () => {
   nav.classList.toggle("sticky", window.scrollY > 0);
@@ -5,14 +6,19 @@ const delay = () => {
 window.addEventListener("scroll", function () {
   delay();
 });
-/* Efecto boton de scroll */
-console.log("Hola");
+
 $(document).ready(function () {
+  /* Inicio */
   $("#boton_main").click(function () {
     var C = document.getElementById("Conocenos");
     C.scrollIntoView({ behavior: "smooth", block: "center" });
   });
-  const formulario = document.getElementById("Formulario");
+  /* Efecto boton de scroll */
+  $("#Inicio").click(function () {
+    var C = document.getElementById("header");
+    C.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  /* Toogle formulario */
   $(".formulario").click(function () {
     $("form").toggle("slow");
   });
