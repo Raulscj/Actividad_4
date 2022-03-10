@@ -1,3 +1,10 @@
+const nav = document.querySelector("nav");
+const delay = () => {
+  nav.classList.toggle("sticky", window.scrollY > 0);
+};
+window.addEventListener("scroll", function () {
+  delay();
+});
 /* Efecto boton de scroll */
 console.log("Hola");
 $(document).ready(function () {

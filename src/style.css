@@ -4,6 +4,8 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #header{
@@ -19,9 +21,21 @@ nav{
   padding:2rem;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   transition: all .3s;
+}
+.sticky {
+  padding:1rem;
+  background-color: rgba(0, 0, 0, 0.822);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.sticky .boton_hamburguesa {
+  box-shadow: none;
+  background-color: transparent;
+  color: white;
 }
 nav ul{
   display: none;
@@ -125,17 +139,17 @@ nav li a:hover{
 }
 #Conocenos .content{
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.2rem;
   margin-bottom: 1.5rem;
 }
 .autor{
   text-align: right;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
 }
 .firma{
   text-align: right;
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   color: grey;
 }
 /* ------- */
@@ -180,7 +194,7 @@ nav li a:hover{
 .card p{
   text-align: center;
   font-size: 0.8rem;
-  color: grey;
+  color:black;
 }
 /* ------- */
 #servicios h3{
@@ -220,7 +234,7 @@ nav li a:hover{
 }
 #Comentarios .card figure img{
   border: solid;
-  border-radius: 8rem;
+  border-radius: 9rem;
   border-width: 0;
 }
 #Comentarios .texto3{
@@ -229,7 +243,7 @@ nav li a:hover{
 .texto3 p{
   color: white;
   text-transform: uppercase;
-  background-color: #382E0B;
+  
 }
 /* ------ */
 .texto4{
