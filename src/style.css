@@ -548,3 +548,62 @@ footer figure img{
     width:30%;
   }
 }
+@media screen and (min-width:1440px){
+  nav figure img{
+    width: 8.5rem;
+    height: 8.5rem; 
+  }
+  nav ul{
+    letter-spacing: 0.3rem;
+  }
+  #banner i{
+    font-size: 3.5rem;    
+  }
+  p{
+    font-size: 1.4rem;
+  }
+  #Conocenos .content{
+    margin-left: 3.5rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+  }
+  .autor{
+    font-size: 1.2rem;
+  }
+  .firma{
+    font-size: 1.1rem;
+  }
+  #servicios p{
+    font-size: 1.2rem;
+  }
+  .texto4 h3{
+    font-weight: 500;
+  }
+  .texto4{
+    margin-left: 8rem;
+    margin-right: 6rem;
+  }
+  #Reservacion form input{
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+  #Reservacion form button{
+    margin: 1.5rem;
+    font-size: 1rem;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .contact li{
+    font-size: 1.3rem;
+  }
+  .icon i{
+    font-size: 3rem;
+  }
+  .allright p{
+    font-size: 0.8rem;
+  }
+}
