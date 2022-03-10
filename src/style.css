@@ -7,7 +7,13 @@
   font-family: 'Lato', sans-serif;
   font-family: 'Montserrat', sans-serif;
 }
-
+h3{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+p{
+  font-size: 0.8rem;
+}
 #header{
   background: url("../MULTIMEDIA/louis-hansel-U6-KvV7HlMk-unsplash\ 1.png");
   object-fit: cover;
@@ -21,8 +27,6 @@ nav{
   padding:2rem;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* position: sticky; */
-  top: 0;
   transition: all .3s;
 }
 .sticky {
@@ -39,9 +43,6 @@ nav{
 }
 nav ul{
   display: none;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 nav figure{
   width: 80%;
@@ -116,7 +117,7 @@ nav li a:hover{
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-left: 2.5rem;
   padding-right:2.5rem;
   padding-bottom: 4rem;
@@ -132,10 +133,11 @@ nav li a:hover{
   object-fit: cover;
   height: 40vh;
 }
-
+#Conocenos{
+  padding-top: 3rem;
+}
 #Conocenos h3{
   text-align: center;
-  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 #Conocenos .content{
@@ -162,10 +164,8 @@ nav li a:hover{
   padding-bottom: 2rem;
 }
 #Thebest h3{
-  /* estilos de la palabra */
   text-align: center;
   padding: 1.5rem;
-  font-size: 1.5rem;
   color: white;
 }
 #Thebest h3 hr{
@@ -194,16 +194,15 @@ nav li a:hover{
 }
 .card p{
   text-align: center;
-  font-size: 0.8rem;
   color:black;
 }
 /* ------- */
 #servicios h3{
+  margin-top: 2rem;
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
 }
-#servicios P{
+#servicios p{
   text-align: center;
   margin-bottom: 1rem;
   font-size: 0.7rem;
@@ -222,7 +221,6 @@ nav li a:hover{
   padding-top: 4rem;
   padding-bottom: 4rem;
   width: 100%;
-  flex-direction: column;
   align-items: center;
   line-height: 1.5rem;
 }
@@ -244,26 +242,24 @@ nav li a:hover{
 .texto3 p{
   color: white;
   text-transform: uppercase;
-  
 }
 /* ------ */
 .texto4{
   text-align: center;
 }
 .texto4 h3{
-  font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
-.texto4 p{
-  font-size: 0.8rem;
-}
+
 .formulario{
   margin-top: 1.5rem;
   line-height: 1.5rem;
   cursor: pointer;
 }
-
+#Reservacion{
+  padding-top:3rem ;
+}
 #Reservacion form{
   background-color: #382E0B;
   display:none;
@@ -371,4 +367,102 @@ footer figure img{
   letter-spacing: 0.1rem;
   font-size: 0.6rem;
   text-transform: uppercase;
+}
+/* Responsive */
+@media screen and (min-width:768px){
+  .boton_hamburguesa{
+    display: none;
+  }
+  nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav figure{
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+  h3{
+    font-size: 2.5rem;
+  }  
+  p{
+    font-size: 1.2rem;
+  }
+  .Sin_fondo{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+  }
+  #Conocenos div{
+    width: 100%;
+  }
+  #Conocenos .content{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 1.5rem;
+    text-align: justify;
+  }
+  .autor{
+    font-size: 0.8rem;
+  }
+  .firma{
+    font-size: 0.7rem;
+  }
+  .card{
+    width: 30%;
+  }
+  #servicios>h3{
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+  #servicios p{
+    margin: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  #Comentarios .food{
+    justify-content: center;
+  }
+  #Comentarios .card{
+    width:40%;
+  }
+  #Comentarios .card p{
+    font-weight: 950;
+  }
+  #Reservacion{
+    justify-content: space-evenly;
+  }
+  .texto4{
+    margin-left: 1.5rem;
+    line-height: 2rem;
+  }
+  .texto4 h3{
+    font-size: 2rem;
+    font-weight: 250;
+  }
+  #Reservacion form input{
+    font-size: 1rem;
+  }
+  #Reservacion hr{
+    margin-top: 0.5rem;
+  }
+  #Reservacion form button{
+    margin: 1rem;
+    font-size: 0.8rem;
+  }
+  .contact{
+    width: 50%;
+  }
+  .allright{
+    width: 50%;
+  }
+  .contact li{
+    font-size: 1rem;
+  }
+  .icon i{
+    font-size: 2rem;
+  }
 }
