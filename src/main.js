@@ -31,15 +31,15 @@ $(document).ready(function () {
       cantidad: $("#cantidad").val(),
       fecha: $("#fecha").val(),
     };
-    /* $.ajax({
+    $.ajax({
       type: "POST",
-      url: "Create.php",
+      url: "DATABASE/Create.php",
       data: Data,
       success: function (response) {
         console.log(response);
       },
     });
-    e.preventDefault(); */
+    e.preventDefault();
 
     /* $.post(
       "Create.php",

@@ -9,7 +9,7 @@
     );
 
     if($connection){
-        echo "Database is Connected";
+        echo "Database is Connected :D ";
     }else{
         die("No hay conexión: ".mysqli_connect_error());	
     
