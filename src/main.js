@@ -12,7 +12,6 @@ $(document).ready(function () {
   let i = 0;
   setInterval(function () {
     i += 1;
-    console.log("entro");
     if (i == 1) {
       $("#header").addClass("bg-1");
       $("#header").removeClass("bg-2");
@@ -40,12 +39,37 @@ $(document).ready(function () {
   }, 1500);
   /* Inicio */
   $("#boton_main").click(function () {
-    var C = document.getElementById("Conocenos");
+    let C = document.getElementById("Conocenos");
     C.scrollIntoView({ behavior: "smooth", block: "center" });
   });
   /* Efecto boton de scroll */
   $("#Inicio").click(function () {
-    var C = document.getElementById("header");
+    let C = document.getElementById("header");
+    C.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  /* Scrool del navbar */
+  $("#Conocenos0").click(function () {
+    let C = document.getElementById("Conocenos");
+    C.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  $("#Thebest0").click(function () {
+    let C = document.getElementById("Thebest");
+    C.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  $("#servicios0").click(function () {
+    let C = document.getElementById("servicios");
+    C.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  $("#Comentarios0").click(function () {
+    let C = document.getElementById("Comentarios");
+    C.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  $("#Reservacion0").click(function () {
+    let C = document.getElementById("Reservacion");
+    C.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  $("#Contacto0").click(function () {
+    let C = document.getElementById("Contacto");
     C.scrollIntoView({ behavior: "smooth", block: "center" });
   });
   /* Toogle formulario */

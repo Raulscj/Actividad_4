@@ -26,6 +26,9 @@ p{
 .bg-4{
   background: url("../MULTIMEDIA/3.jpg");
 }
+.pointer{
+  cursor: pointer;
+}
 #header{
   object-fit: cover;
   background-size: cover;
@@ -63,7 +66,7 @@ nav figure img{
   width: 4rem;
   cursor: pointer;
 }
-nav li a{
+nav li {
   line-height: 2rem;
   margin: 0.5rem 0;
   color: white;
@@ -72,7 +75,7 @@ nav li a{
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-nav li a:hover{
+nav li:hover{
   color: #382E0B;
   transition: .3s ease-in-out;
 }
@@ -193,6 +196,10 @@ nav li a:hover{
   width: 50%;
 
 }
+.card:hover{
+  width: 55%;
+  transition: all .3s ease-in-out;
+}
 .card figure{
   width: 100%;
 }
@@ -238,6 +245,10 @@ nav li a:hover{
   margin-right:1rem;
   width: 80%;
   padding-bottom: 2rem;
+}
+#Comentarios .card:hover{
+  width:85%;
+  transition: all .3s ease-in-out;
 }
 #Comentarios .card figure img{
   border: solid;
@@ -408,6 +419,10 @@ footer figure img{
   #Comentarios .card{
     width:60%;
   }
+  #Comentarios .card:hover{
+    width:65%;
+    transition: all .3s ease-in-out;
+  }
   #Comentarios .card p{
     font-weight: 900;
   }
@@ -479,6 +494,10 @@ footer figure img{
   .card{
     width: 30%;
   }
+  .card:hover{
+    width: 31%;
+    transition: all .3s ease-in-out;
+  }
   #servicios>h3{
     margin-top: 4rem;
     font-size: 3rem;
@@ -493,6 +512,10 @@ footer figure img{
   }
   #Comentarios .card{
     width:40%;
+  }
+  #Comentarios .card:hover{
+    width:41%;
+    transition: all .3s ease-in-out;
   }
   #Comentarios .card p{
     font-weight: 950;
@@ -527,10 +550,10 @@ footer figure img{
 }
 @media screen and (min-width:1024px){
   nav figure img{
-    width: 7rem;
-    height: 7rem; 
+    width: 5rem;
+    height: 5rem; 
   }
-  nav li a{
+  nav li{
     font-size: 1.2rem;
   }
   #banner {
@@ -561,6 +584,18 @@ footer figure img{
   #Comentarios .card{
     width:30%;
   }
+  #Comentarios .card:hover{
+    width:31%;
+    transition: all .3s ease-in-out;
+  }
+  #Comentarios .card figure{
+    display: flex;
+    justify-content: center;
+  }
+  #Comentarios .card figure img{    
+    width: 10rem;
+    height: 10rem;
+  }
   .contact{
     display: flex;
     flex-direction: column;
@@ -569,15 +604,21 @@ footer figure img{
   }
 }
 @media screen and (min-width:1340px){
+  nav{
+    padding: 0.1rem;
+  }
   nav figure img{
-    width: 8.5rem;
-    height: 8.5rem; 
+    width: 5rem;
+    height: 5rem; 
   }
   nav ul{
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
   }
   #banner i{
-    font-size: 3.5rem;    
+    font-size: 3rem;    
+  }
+  #banner{
+    height: 70vh;
   }
   p{
     font-size: 1.4rem;
@@ -602,6 +643,9 @@ footer figure img{
   .texto4{
     margin-left: 8rem;
     margin-right: 6rem;
+  }
+  #Thebest .card figure img{
+    height: 20rem;
   }
   #Reservacion form input{
     width: 15rem;
