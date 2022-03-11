@@ -64,7 +64,6 @@ nav figure{
 }
 nav figure img{
   width: 4rem;
-  cursor: pointer;
 }
 nav li {
   line-height: 2rem;

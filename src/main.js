@@ -43,7 +43,7 @@ $(document).ready(function () {
     C.scrollIntoView({ behavior: "smooth", block: "center" });
   });
   /* Efecto boton de scroll */
-  $("#Inicio").click(function () {
+  $(".Inicio").click(function () {
     let C = document.getElementById("header");
     C.scrollIntoView({ behavior: "smooth", block: "center" });
   });
